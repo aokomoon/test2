@@ -1,0 +1,291 @@
+version: "4.1"
+name: DSPDemo
+type: ARM
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Application
+      files: []
+      folders:
+        - name: MDK-ARM
+          files:
+            - path: startup_stm32h743xx.s
+          folders: []
+        - name: User
+          files: []
+          folders:
+            - name: Core
+              files:
+                - path: ../Core/Src/main.c
+                - path: ../Core/Src/gpio.c
+                - path: ../Core/Src/adc.c
+                - path: ../Core/Src/dma.c
+                - path: ../Core/Src/fmc.c
+                - path: ../Core/Src/i2c.c
+                - path: ../Core/Src/usart.c
+                - path: ../Core/Src/stm32h7xx_it.c
+                - path: ../Core/Src/stm32h7xx_hal_msp.c
+              folders: []
+    - name: Drivers
+      files: []
+      folders:
+        - name: STM32H7xx_HAL_Driver
+          files:
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+            - path: ../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+          folders: []
+        - name: CMSIS
+          files:
+            - path: ../Core/Src/system_stm32h7xx.c
+          folders: []
+    - name: DSP
+      files:
+        - path: ../DSPLIB/Source/BasicMathFunctions/BasicMathFunctions.c
+        - path: ../DSPLIB/Source/BasicMathFunctions/BasicMathFunctionsF16.c
+        - path: ../DSPLIB/Source/BayesFunctions/BayesFunctions.c
+        - path: ../DSPLIB/Source/BayesFunctions/BayesFunctionsF16.c
+        - path: ../DSPLIB/Source/CommonTables/CommonTables.c
+        - path: ../DSPLIB/Source/CommonTables/CommonTablesF16.c
+        - path: ../DSPLIB/Source/ComplexMathFunctions/ComplexMathFunctions.c
+        - path: ../DSPLIB/Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+        - path: ../DSPLIB/Source/ControllerFunctions/ControllerFunctions.c
+        - path: ../DSPLIB/Source/DistanceFunctions/DistanceFunctions.c
+        - path: ../DSPLIB/Source/DistanceFunctions/DistanceFunctionsF16.c
+        - path: ../DSPLIB/Source/FastMathFunctions/FastMathFunctions.c
+        - path: ../DSPLIB/Source/FastMathFunctions/FastMathFunctionsF16.c
+        - path: ../DSPLIB/Source/FilteringFunctions/FilteringFunctions.c
+        - path: ../DSPLIB/Source/FilteringFunctions/FilteringFunctionsF16.c
+        - path: ../DSPLIB/Source/InterpolationFunctions/InterpolationFunctions.c
+        - path: ../DSPLIB/Source/InterpolationFunctions/InterpolationFunctionsF16.c
+        - path: ../DSPLIB/Source/MatrixFunctions/MatrixFunctions.c
+        - path: ../DSPLIB/Source/MatrixFunctions/MatrixFunctionsF16.c
+        - path: ../DSPLIB/Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+        - path: ../DSPLIB/Source/StatisticsFunctions/StatisticsFunctions.c
+        - path: ../DSPLIB/Source/StatisticsFunctions/StatisticsFunctionsF16.c
+        - path: ../DSPLIB/Source/SupportFunctions/SupportFunctions.c
+        - path: ../DSPLIB/Source/SupportFunctions/SupportFunctionsF16.c
+        - path: ../DSPLIB/Source/SVMFunctions/SVMFunctions.c
+        - path: ../DSPLIB/Source/SVMFunctions/SVMFunctionsF16.c
+        - path: ../DSPLIB/Source/TransformFunctions/TransformFunctions.c
+        - path: ../DSPLIB/Source/TransformFunctions/TransformFunctionsF16.c
+        - path: ../DSPLIB/Source/WindowFunctions/WindowFunctions.c
+      folders: []
+    - name: moder
+      files:
+        - path: ../moder/led.c
+        - path: ../moder/Midfilter.c
+        - path: ../moder/Upper.c
+        - path: ../moder/LMS_norm.c
+        - path: ../moder/spline.c
+        - path: ../moder/thd.c
+        - path: ../moder/SI5351.c
+        - path: ../moder/Si5351A-RevB-Registers.h
+        - path: ../clock/Si5351A2.h
+        - path: ../clock/Si5351A3.h
+        - path: ../moder/headers.h
+      folders: []
+    - name: BSP
+      files:
+        - path: ../BSP/BSP_ADC.C
+      folders: []
+    - name: FFT
+      files:
+        - path: ../moder/fft.c
+        - path: ../moder/FFTInc.h
+        - path: ../moder/ifft.c
+        - path: ../moder/Digital_Filter.c
+      folders: []
+    - name: ::CMSIS
+      files: []
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 4a1bcec305115e0ed64ff5a014748286
+targets:
+  DSPDemo:
+    cppPreprocessAttrs:
+      defineList:
+        - USE_PWR_LDO_SUPPLY
+        - USE_HAL_DRIVER
+        - STM32H743xx
+        - DATA_IN_ExtSDRAM
+      incList:
+        - ../clock
+        - ../BSP
+        - ../moder
+        - ../DSPLIB/Source
+        - ../DSPLIB/PrivateInclude
+        - ../DSPLIB/Include
+        - ../DSPLIB/ComputeLibrary
+        - ../Core/Inc
+        - ../Drivers/STM32H7xx_HAL_Driver/Inc
+        - ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+        - ../Drivers/CMSIS/Device/ST/STM32H7xx/Include
+        - ../Drivers/CMSIS/Include
+        - .cmsis/include
+        - RTE/_DSPDemo
+      libList: []
+    excludeList: []
+    toolchain: AC6
+    toolchainConfigMap:
+      AC6:
+        archExtensions: ""
+        cpuType: Cortex-M7
+        floatingPointHardware: double
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler:
+            $use: asm-auto
+            misc-controls: ""
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+            language-cpp: c++11
+            link-time-optimization: false
+            one-elf-section-per-function: true
+            optimization: level-3
+            short-enums#wchar: true
+            warnings: ac5-like-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            misc-controls: --diag_suppress=L6329
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: DSPDemo\DSPDemo.sct
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x20000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: true
+              mem:
+                size: "0x80000"
+                startAddr: "0x24000000"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x200000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: true
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+      OpenOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        interface: cmsis-dap
+        target: stm32h7x
+      STLink:
+        address: "0x8000000"
+        bin: ""
+        elFile: None
+        optionBytes: .eide/dspdemo.st.option.bytes.ini
+        otherCmds: ""
+        proType: SWD
+        resetMode: default
+        runAfterProgram: true
+        speed: 4000
+    uploader: OpenOCD

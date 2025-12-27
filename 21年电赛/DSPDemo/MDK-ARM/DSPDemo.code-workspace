@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "name": "2信号备赛",
+            "path": "../../.."
+        }
+    ],
+    "settings": {},
+    "extensions": {}
+}

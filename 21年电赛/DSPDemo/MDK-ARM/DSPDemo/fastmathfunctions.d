@@ -1,0 +1,29 @@
+dspdemo/fastmathfunctions.o: \
+  ..\DSPLIB\Source\FastMathFunctions\FastMathFunctions.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_cos_f32.c \
+  ..\DSPLIB\Include\dsp\fast_math_functions.h \
+  ..\DSPLIB\Include\arm_math_types.h \
+  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  ..\Drivers\CMSIS\Include\cmsis_armclang.h \
+  ..\DSPLIB\Include\arm_math_memory.h ..\DSPLIB\Include\dsp\none.h \
+  ..\DSPLIB\Include\dsp\utils.h \
+  ..\DSPLIB\Include\dsp\basic_math_functions.h \
+  ..\DSPLIB\Include\arm_common_tables.h \
+  ..\DSPLIB\Source\FastMathFunctions\arm_cos_q15.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_cos_q31.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_sin_f32.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_sin_q15.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_sin_q31.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_sqrt_q31.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_sqrt_q15.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_vexp_f32.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_vexp_f64.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_vlog_f32.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_vlog_f64.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_divide_q15.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_divide_q31.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_vlog_q31.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_vlog_q15.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_atan2_f32.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_atan2_q31.c \
+  ..\DSPLIB\Source\FastMathFunctions\arm_atan2_q15.c
